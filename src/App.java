@@ -6,7 +6,7 @@ public class App {
 
         JFrame frame = new JFrame();
         frame.setTitle("Ultimate Iwatani Quest");
-        frame.setSize(500, 500);
+        frame.setSize(501, 510);
         frame.setVisible(true);
     }
 }
