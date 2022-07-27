@@ -1,12 +1,19 @@
-import javax.swing.JFrame;
 
-public class App {
+import javax.swing.ImageIcon;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import java.awt.*;
+
+public class App{
 
     public static void main(String[] args) throws Exception {
 
-        JFrame frame = new JFrame();
-        frame.setTitle("Ultimate Iwatani Quest");
-        frame.setSize(420, 420);
-        frame.setVisible(true);
+        new Field();
+
+
+
+
+
+
     }
 }
