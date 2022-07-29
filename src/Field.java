@@ -11,6 +11,7 @@ import javax.swing.KeyStroke;
 
 public class Field extends JFrame{
         
+    
         JLabel label;
         JLabel textlabel;
         JPanel panel1;
@@ -21,9 +22,16 @@ public class Field extends JFrame{
         Action downAction;
         Action leftAction;
         Action rightAction;
+        Box enemy;
+        boolean gameOver; 
+        Image image;
+        Graphics graphics;  
         
         
     Field(){
+        enemy = new Box(100, 300, 50, 50, Color.blue);
+        gameOver = false;
+        
         this.setTitle("Ultimate Iwatani Quest");
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setSize(680, 520);
@@ -110,6 +118,14 @@ public class Field extends JFrame{
             label.setLocation(label.getX()+10, label.getY());
             
         }}
+
+        public void paint(Graphics g){
+            image = createImage(this.getWidth(), this.getHeight());
+            graphics = image.getGraphics();
+            g.drawImage(image, 0,0,this);
+
+            enemy.draw(g);
+        }
 
     
         

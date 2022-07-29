@@ -1,10 +1,10 @@
 import java.awt.*;
 import java.awt.event.*;
-public class Box extends Rectangle{
+public class ColorBox extends Rectangle{
    
     Color color;
 
-    Box(int x, int y, int width, int height, Color color){
+    ColorBox(int x, int y, int width, int height, Color color){
         this.x = x;
         this.y = y;
         this.width = width;
